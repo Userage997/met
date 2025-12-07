@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetStyle - Официальный сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Контейнер для частиц -->
+    <div id="particles-js"></div>
+    
+    <!-- Главный экран -->
+    <section id="home" class="screen active">
+        <div class="container">
+            <div class="intro-text">
+                <h1 class="animated-line">Привет, пользователь.</h1>
+                <h2 class="animated-line">Ты попал на мой официальный сайт с нужной тебе информацией.</h2>
+                <h3 class="animated-line">Изучай :)</h3>
+            </div>
+            
+            <div class="buttons">
+                <button class="btn btn-price" onclick="showPricing()">
+                    <i class="fas fa-tags"></i> Прайс
+                </button>
+                <button class="btn btn-works" onclick="window.open('https://t.me/metacursed', '_blank')">
+                    <i class="fas fa-briefcase"></i> Мои работы (отзывы)
+                </button>
+                <button class="btn btn-contact" onclick="window.open('https://t.me/metstyle', '_blank')">
+                    <i class="fas fa-paper-plane"></i> Написать мне
+                </button>
+            </div>
+            
+            <div class="scroll-hint">
+                <span>или прокрути вниз</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Экран с ценами -->
+    <section id="pricing" class="screen">
+        <div class="container">
+            <button class="back-btn" onclick="showHome()">
+                <i class="fas fa-arrow-left"></i> Назад
+            </button>
+            
+            <h1 class="section-title">Мои услуги</h1>
+            
+            <!-- Сайты -->
+            <div class="category">
+                <h2><i class="fas fa-globe"></i> Сайты</h2>
+                
+                <div class="service">
+                    <h3>Сайт-переходник для телеграм канала:</h3>
+                    <ul>
+                        <li>Если у тебя есть 300 и более подписчиков в твоём проекте, то сделаю тебе за мой пиар и постоянное использование сайта.</li>
+                        <li>Если ты обычный пользователь или непопулярный осинтер/доксер и далее по списку - для тебя цена <span class="price">300 рублей</span>.</li>
+                    </ul>
+                </div>
+                
+                <div class="service">
+                    <h3>Сайт-био со всей информацией о тебе (которую предоставишь):</h3>
+                    <ul>
+                        <li>Для феймов - <span class="price">200 рублей</span></li>
+                        <li>Для остальных - <span class="price">300 рублей</span></li>
+                    </ul>
+                </div>
+                
+                <div class="service">
+                    <h3>Сайт-шоп:</h3>
+                    <ul>
+                        <li>Для всех цена <span class="price">800 рублей</span></li>
+                    </ul>
+                </div>
+                
+                <div class="service">
+                    <h3>Сайт под ваш персональный запрос:</h3>
+                    <ul>
+                        <li>Для всех - <span class="price">100-1500 рублей</span> (в зависимости от сложности)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Софты -->
+            <div class="category">
+                <h2><i class="fas fa-code"></i> Софты</h2>
+                
+                <div class="service">
+                    <h3>Софты на базах данных:</h3>
+                    <ul>
+                        <li>Для всех - <span class="price">1000 рублей</span></li>
+                    </ul>
+                </div>
+                
+                <div class="service">
+                    <h3>Софты на google dork, parser соц сетей и web crawler:</h3>
+                    <ul>
+                        <li>Для всех - <span class="price">400 рублей</span></li>
+                    </ul>
+                </div>
+                
+                <div class="service">
+                    <h3>Софты на api ботов (от вас мне нужен api):</h3>
+                    <ul>
+                        <li>Для феймов - <span class="price">300 рублей</span></li>
+                        <li>Для разработчиков (моя помощь) - <span class="price">100 рублей</span></li>
+                        <li>Для остальных - <span class="price">400 рублей</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Мануалы/обучения/туториалы -->
+            <div class="category">
+                <h2><i class="fas fa-graduation-cap"></i> Мануалы/обучения/туториалы</h2>
+                
+                <div class="service">
+                    <h3>На создание сайтов:</h3>
+                    <ul>
+                        <li>Мануал - <span class="price">300 рублей</span></li>
+                        <li>Личное обучение - <span class="price">600 рублей</span></li>
+                        <li>Туториал - <span class="price">400 рублей</span></li>
+                    </ul>
+                </div>
+                
+                <div class="service">
+                    <h3>На создание софтов (любых):</h3>
+                    <ul>
+                        <li>Мануал - <span class="price">нету</span></li>
+                        <li>Обучение - <span class="price">400 рублей</span></li>
+                        <li>Туториал - <span class="price">нету</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="contact-promo">
+                <p>Заинтересовало? Пиши мне в Telegram!</p>
+                <button class="btn btn-telegram" onclick="window.open('https://t.me/metstyle', '_blank')">
+                    <i class="fab fa-telegram"></i> Написать в Telegram
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
